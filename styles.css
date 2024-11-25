@@ -3,17 +3,23 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Panton Narrow';
+    src: url('./design/font/PantonNarrow-Trial-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;
     color: white;
-    font-family: "Outfit", sans-serif;
 }
 
 .navbar {
     width: 100%;
-    background-color: #000;
+    background-color: #111111;
 }
 
 .navbar-top {
@@ -31,12 +37,14 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 45px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .logo-name {
-    font-weight: 800;
+    font-family: 'Panton Narrow', sans-serif;
+    font-size: 1em;
 }
 
 .right-section {
@@ -68,7 +76,7 @@ body {
 .navbar-bottom {
     display: flex;
     justify-content: center;
-    background-color: #10232e;
+    background-color: #112733cc;
     padding: 10px 0;
 }
 
@@ -83,57 +91,95 @@ body {
     cursor: pointer;
 }
 
-/* menu button */
-.button-menu {
-    --color: #ffffff;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .3s;
-    font-weight: 600;
-    font-size: 17px;
-    border: 3px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
-   }
-   
-   .button-menu::before, .button-menu::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
+/* Футер */
+footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #111111;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container {
+    display: flex;
+    gap: 24px;
+}
+
+.social-link {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 0.6s ease;
-   }
-   
-   .button-menu::before {
-    top: -1em;
-    left: -1em;
-   }
-   
-   .button-menu::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-   }
-   
-   .button-menu:hover::before, .button-menu:hover::after {
-    height: 410px;
-    width: 410px;
-   }
-   
-   .button-menu:hover {
-    color: rgb(10, 25, 30);
-   }
-   
-   .button-menu:active {
-    filter: brightness(.8);
-   }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s;
+    padding: 10px;
+    fill: white;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
+/* Бургерменю */
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    margin-right: 20px;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
