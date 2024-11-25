@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;
     color: white;
+    font-family: "Outfit", sans-serif;
 }
 
 .navbar {
@@ -19,7 +20,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    height: 100px;
+    font-size: 2.5em;
 }
 
 .logo {
@@ -28,8 +31,12 @@ body {
 }
 
 .logo img {
-    height: 25px;
+    height: 50px;
     margin-right: 10px;
+}
+
+.logo-name {
+    font-weight: 800;
 }
 
 .right-section {
@@ -58,14 +65,6 @@ body {
     border-radius: 5px;
 }
 
-.menu-btn {
-    background: none;
-    border: 2px solid white;
-    color: white;
-    padding: 8px 15px;
-    cursor: pointer;
-}
-
 .navbar-bottom {
     display: flex;
     justify-content: center;
@@ -83,3 +82,58 @@ body {
 .navbar-bottom a.dropdown {
     cursor: pointer;
 }
+
+/* menu button */
+.button-menu {
+    --color: #ffffff;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+    font-size: 17px;
+    border: 3px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button-menu::before, .button-menu::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 0.6s ease;
+   }
+   
+   .button-menu::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button-menu::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button-menu:hover::before, .button-menu:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button-menu:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button-menu:active {
+    filter: brightness(.8);
+   }
