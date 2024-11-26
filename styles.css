@@ -183,3 +183,76 @@ footer {
     top: 28px;
     left: 5px;
 }
+
+/* блог контейнер */
+/* Общие стили */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Стили для большой карточки */
+.card.large {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.large h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #1f1f1f;
+}
+
+.card.large .read-more {
+    font-weight: bold;
+    color: #3d98ff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Стили для маленьких карточек */
+.card.small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.small h3 {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #1f1f1f;
+}
+
+.card.small a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* Общие элементы */
+.card .date, .card .category, .card .author {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.card .category {
+    font-weight: bold;
+    margin: 5px 0;
+}
