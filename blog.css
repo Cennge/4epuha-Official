@@ -66,3 +66,15 @@
     font-weight: bold;
     margin: 5px 0;
 }
+
+@media (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+    }
+
+    .card.large {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+}
