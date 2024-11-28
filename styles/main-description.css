@@ -1,7 +1,7 @@
 .logo-description-block {
     background-color: #333333;
     text-align: center;
-    height: 700px;
+    height: 500px;
 }
 
 .logo-description-container {
@@ -17,14 +17,14 @@
     margin-bottom: 20px;
 }
 
-.title {
+.title-description {
     font-size: 3em;
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Panton Narrow', sans-serif;
 }
 
-.subtitle {
+.subtitle-description {
     font-size: 2em;
     margin-bottom: 30px;
 }

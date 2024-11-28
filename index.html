@@ -7,21 +7,24 @@
     <title>4epuha Official</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main-description.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main-description.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
 
-    <header class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background-color: #111111;">
+    <header class="navbar navbar-expand-lg navbar-dark custom-navbar" data-aos="fade-down" style="background-color: #111111;">
         <div class="container-fluid">
             <div class="logo">
                 <img src="design/logo/logo-white.png" alt="Logo" style="height: 35px;">
                 <span class="navbar-brand logo-name" style="font-size: 2rem;">4epuha</span>
             </div>
+            
 
             <button class="custom-button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
@@ -46,18 +49,17 @@
 
     <main>
         <div class="logo-description-block">
-            <div class="logo-description-container">
+            <div class="logo-description-container" data-aos="fade-up">
                 <img src="./design/logo/logo-white.png" alt="img" class="logo-description">
-                <h1 class="title">4epuha inc.</h1>
+                <h1 class="title-description">4epuha inc.</h1>
                 <div class="company-info">
                     <h3>We are a society of progress.</h3>
                 </div>
-            </div>
-           
+            </div>            
         </div>
 
         <div class="grid-container">
-            <div class="card large" style="background-image: url('/design/blog-photo/IMG_7533.JPG');">
+            <div class="card large" data-aos="zoom-in" style="background-image: url('/design/blog-photo/IMG_7533.JPG');">
                 <div class="date">1 day ago</div>
                 <div class="category">NEWS</div>
                 <h2>4epuha inc. has hired a new employee! Meet Yarik Bortnik</h2>
@@ -65,7 +67,7 @@
                 <a href="#" class="read-more">READ MORE →</a>
             </div>
 
-            <div class="card small" style="background-image: url('path-to-image-2.jpg');">
+            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-2.jpg');">
                 <div class="date">2 days ago</div>
                 <div class="category">News</div>
                 <h3>4epuha inc. is back in business</h3>
@@ -73,7 +75,7 @@
                 <a href="#">→</a>
             </div>
 
-            <div class="card small" style="background-image: url('path-to-image-3.jpg');">
+            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-3.jpg');">
                 <div class="date">3 days ago</div>
                 <div class="category">NEWS</div>
                 <h3>4epuha inc. has started production of several projects at once!</h3>
@@ -81,7 +83,7 @@
                 <a href="#">→</a>
             </div>
 
-            <div class="card small" style="background-image: url('path-to-image-4.jpg');">
+            <div class="card small" data-aos="fade-up" style="background-image: url('path-to-image-4.jpg');">
                 <div class="date">4 months ago</div>
                 <div class="category">NEWS</div>
                 <h3>Coming soon...</h3>
@@ -89,7 +91,7 @@
                 <a href="#">→</a>
             </div>
 
-            <div class="card small" style="background-image: url('path-to-image-5.jpg');">
+            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-5.jpg');">
                 <div class="date">4 months ago</div>
                 <div class="category">NEWS</div>
                 <h3>Coming soon...</h3>
@@ -99,7 +101,7 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-center text-white py-4">
+    <footer data-aos="fade-up" class="bg-dark text-center text-white py-4">
         <div class="social-container">
             <a class="social-link" href="https://discord.gg/TCyA5tve7G" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 50 50">
@@ -124,6 +126,14 @@
     </footer>
 
 
+    <script>
+        AOS.init({
+            duration: 700, 
+            easing: 'ease-in-out', 
+            once: true
+        });
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
