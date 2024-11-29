@@ -36,6 +36,13 @@
     color: #dfdfdf; 
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+
 /* Бургер меню */
 .custom-button {
     border: none;

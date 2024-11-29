@@ -1,7 +1,10 @@
 .logo-description-block {
-    background-color: #333333;
+    background-image: url('/design/main-photo/main-photo.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 700px;
     text-align: center;
-    height: 500px;
 }
 
 .logo-description-container {
@@ -10,6 +13,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    font-family: 'Helvetica Neue Medium', sans-serif;
 }
 
 .logo-description {

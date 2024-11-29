@@ -11,6 +11,16 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('/design/font/HelveticaNeue-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('/design/font/HelveticaNeue-Light.otf') format('opentype');
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;

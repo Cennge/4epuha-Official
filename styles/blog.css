@@ -19,6 +19,7 @@
     position: relative;
     overflow: hidden;
     color: #fff;
+    font-family: 'Helvetica Neue Medium', sans-serif;
 }
 
 .card::before {
