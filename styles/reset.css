@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Panton Narrow';
-    src: url('./design/font/PantonNarrow-Trial-ExtraBoldItalic.ttf') format('truetype');
+    src: url('/design/font/PantonNarrow-Trial-ExtraBoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
