@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4epuha Official</title>
+    <title>4epuha News</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/blog.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main-description.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main-description.css">
+    <link rel="stylesheet" href="/styles/card-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
 
+    <!-- Навигационная панель -->
     <header class="navbar navbar-expand-lg navbar-dark custom-navbar" data-aos="fade-down" style="background-color: #111111;">
         <div class="container-fluid">
             <div class="logo">
-                <a href="index.html" class="logo-link" style="display: flex; align-items: center; text-decoration: none;">
+                <a href="../index.html" class="logo-link" style="display: flex; align-items: center; text-decoration: none;">
                     <img src="/design/logo/logo-white.png" alt="Logo" style="height: 35px;">
                     <span class="navbar-brand logo-name" style="font-size: 2rem; color: white; margin-left: 10px;">4epuha</span>
                 </a>
@@ -49,100 +51,86 @@
         </div>
     </header>
 
-
     <main>
-        <div class="logo-description-block" style="background-image: url('/design/main-photo/main-photo.png');">
+
+        <div class="logo-description-block" style="background-image: url('/design/main-photo/main-photo-news.png');">
             <div class="logo-description-container" data-aos="fade-up">
-                <img src="./design/logo/logo-white.png" alt="img" class="logo-description">
-                <h1 class="title-description">4epuha inc.</h1>
+                <img src="/design/logo/logo-white.png" alt="img" class="logo-description">
+                <h1 class="title-description">4epuha News</h1>
                 <div class="company-info">
-                    <h3>We are a society of progress.</h3>
+                    <h3></h3>
                 </div>
-            </div>            
+            </div>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-           
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-    
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/design/carousel-photo/carousel-1.png" class="d-block w-100" alt="First Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                        <p></p>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-1.png" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">4epuha Hires a New Designer</h5>
+                            <p class="card-text">Meet our new team member, Jenya Noname, joining us to drive innovation.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/design/carousel-photo/carousel-2.png" class="d-block w-100" alt="Second Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                        <p></p>
+
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-2.png" class="card-img-top" alt="News 2">
+                        <div class="card-body">
+                            <h5 class="card-title">4epuha Hires a New Investor</h5>
+                            <p class="card-text">Meet our new team member, Egor Jemlihanov, joining us to drive innovation.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/design/carousel-photo/carousel-3.png" class="d-block w-100" alt="Third Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                        <p></p>
+                
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-3.png" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">4epuha Hires a New Talent</h5>
+                            <p class="card-text">Meet our new team member, Yarik Bortnik, joining us to drive innovation.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    
+                
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-4.png" class="card-img-top" alt="News 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Events</h5>
+                            <p class="card-text">Stay tuned for our upcoming webinars and industry events.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="grid-container">
-            <div class="card large" data-aos="zoom-in" style="background-image: url('/design/blog-photo/IMG_7533.JPG');">
-                <div class="date">1 day ago</div>
-                <div class="category">NEWS</div>
-                <h2>4epuha inc. has hired a new employee! Meet Yarik Bortnik</h2>
-                <div class="author">Cennge Writer</div>
-                <a href="pages/news-pages.html" class="read-more">READ MORE →</a>
-            </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-5.png" class="card-img-top" alt="News 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming</h5>
+                            <p class="card-text">Coming soon...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-2.jpg');">
-                <div class="date">2 days ago</div>
-                <div class="category">News</div>
-                <h3>4epuha inc. is back in business</h3>
-                <div class="author">Cennge Writer</div>
-                <a href="pages/news-pages.html">→</a>
-            </div>
-
-            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-3.jpg');">
-                <div class="date">3 days ago</div>
-                <div class="category">NEWS</div>
-                <h3>4epuha inc. has started production of several projects at once!</h3>
-                <div class="author">Cennge Writer</div>
-                <a href="pages/news-pages.html">→</a>
-            </div>
-
-            <div class="card small" data-aos="fade-up" style="background-image: url('path-to-image-4.jpg');">
-                <div class="date">4 months ago</div>
-                <div class="category">NEWS</div>
-                <h3>Coming soon...</h3>
-                <div class="author">Cennge Writer</div>
-                <a href="pages/news-pages.html">→</a>
-            </div>
-
-            <div class="card small" data-aos="fade-left" style="background-image: url('path-to-image-5.jpg');">
-                <div class="date">4 months ago</div>
-                <div class="category">NEWS</div>
-                <h3>Coming soon...</h3>
-                <div class="author">Cennge Writer</div>
-                <a href="pages/news-pages.html">→</a>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card news-card">
+                        <img src="/design/news/news-card-6.png" class="card-img-top" alt="News 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming</h5>
+                            <p class="card-text">Coming soon...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -170,7 +158,6 @@
             <p>&copy; 2024 4epuha. All rights reserved.</p>
         </div>
     </footer>
-
 
     <script>
         AOS.init({
