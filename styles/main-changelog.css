@@ -1,0 +1,56 @@
+.card-changelog {
+    width: 80%;
+    max-width: 1400px; 
+    height: 300px;
+    margin: 20px auto; 
+    background-color: #111111;
+    border: 2px solid #424242;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Helvetica Neue Medium', sans-serif;
+}
+
+.card-changelog-header {
+    position:sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.card-changelog-header h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.card-changelog-header .date-changelog {
+    font-size: 0.9rem;
+    color: #747474;
+}
+
+.card-changelog-content {
+    flex-grow: 1;
+    color: #adadad;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.card-changelog-footer {
+    text-align: right;
+}
+
+.card-changelog-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-changelog-footer a:hover {
+    text-decoration: underline;
+}
