@@ -19,7 +19,6 @@
 
 <body>
 
-    <!-- Навигационная панель -->
     <header class="navbar navbar-expand-lg navbar-dark custom-navbar" data-aos="fade-down" style="background-color: #111111;">
         <div class="container-fluid">
             <div class="logo">
@@ -28,14 +27,21 @@
                     <span class="navbar-brand logo-name" style="font-size: 2rem; color: white; margin-left: 10px;">4epuha</span>
                 </a>
             </div>
-            
-            
-
-            <button class="custom-button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span>
+    
+            <!-- Кнопка бургер-меню справа -->
+            <button class="custom-button navbar-toggler d-flex d-lg-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
+    
+            <!-- Кнопка Login на маленьких экранах, левее бургер-меню -->
+            <a href="/pages/login-pages.html" class="btn-primary ms-3 d-lg-none">
+                Login
+                <span class="arrow-wrapper">
+                    <span class="arrow"></span>
+                </span>
+            </a>
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="/pages/news-pages.html">NEWS</a></li>
@@ -46,8 +52,15 @@
                     <li class="nav-item"><a class="nav-link" href="/pages/jobs-pages.html">JOBS</a></li>
                     <li class="nav-item"><a class="nav-link" href="/pages/socials-pages.html">SOCIALS</a></li>
                 </ul>
+    
+                <!-- Кнопка Login для больших экранов -->
+                <a href="/pages/login-pages.html" class="btn-primary d-none d-lg-inline-flex align-items-center ms-auto">
+                    Login
+                    <span class="arrow-wrapper">
+                        <span class="arrow"></span>
+                    </span>
+                </a>
             </div>
-
         </div>
     </header>
 
