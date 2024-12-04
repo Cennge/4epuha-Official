@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: 'Panton Narrow';
-    src: url('/design/font/PantonNarrow-Trial-ExtraBoldItalic.ttf') format('truetype');
+    src: url('/font/PantonNarrow-Trial-ExtraBoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Helvetica Neue Medium';
-    src: url('/design/font/HelveticaNeue-Medium.otf') format('opentype');
+    src: url('/font/HelveticaNeue-Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Helvetica Neue Light';
-    src: url('/design/font/HelveticaNeue-Light.otf') format('opentype');
+    src: url('/font/HelveticaNeue-Light.otf') format('opentype');
 }
 
 body {
